@@ -1,0 +1,61 @@
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin-top: 20px;
+}
+
+.cart.ant-badge {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.nav__items{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+hr{
+    border-top: 1px dashed #8c8b8b;
+    background: #ECEAEA;
+}
+
+.nav__item{
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color: orange;
+}
+
+.nav__item{
+    margin-right: 30px;
+}
+
+.logo__img{
+    width: 90px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
