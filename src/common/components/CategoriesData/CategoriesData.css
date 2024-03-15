@@ -1,0 +1,7 @@
+.menu__item{
+    color: black;
+}
+
+.menu__item:hover{
+    color: gray;
+}

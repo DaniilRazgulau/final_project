@@ -1,18 +1,23 @@
 import { Routes, Route } from 'react-router-dom'
 import { Layout } from './Layout'
 import { Main } from '../modules/main'
-import { Tours } from '../modules/tours/Tours'
+import { Catalog } from '../modules/catalog/Catalog'
 import { AboutUs } from '../modules/aboutUs'
-import { ToursInBel } from '../modules/toursInBel/ToursInBel'
+import { CatalogPage } from '../modules/catalog/CatalogPage'
+import { CatalogList } from '../modules/catalog/CatalogList'
+import { Promotions } from '../modules/promotions/Promotions'
+import { Contacts } from '../modules/contacts'
 
 export const App = () => {
     return <>
         <Routes>
             <Route path="/" element={<Layout />}>
                     <Route index element={<Main />}/>
-                    <Route path="/tours/*" element={<Tours />}/>
-                    <Route path="/toursInBel/" element={<ToursInBel />}/>
+                    {/* <Route path="/promotions/" element={<Promotions />}/> */}
                     <Route path="/aboutUs" element={<AboutUs />}/>
+                    <Route path="/:catalogId/*" element={<CatalogList/>}/>
+                    <Route path="/:catalogId/:productId" element={<CatalogPage />} />
+                    {/* <Route path="/contacts" element={<Contacts />}/> */}
             </Route>
         </Routes>
     </>

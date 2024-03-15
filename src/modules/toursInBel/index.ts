@@ -1,1 +1,0 @@
-export { ToursInBel } from './ToursInBel'

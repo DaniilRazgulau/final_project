@@ -1,0 +1,46 @@
+.product .ant-image{
+    width: 300px;
+    height: 100%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.product{
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+
+.product__image{
+    width: 300px;
+}
+
+.product_title{
+    font-size: 18px;
+}
+
+.product_title a{
+    color: black;
+}
+
+.product_price{
+    margin: 10px 0;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.product_add_btn{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    background: #F0F8FF;
+    border: none;
+    box-shadow: none;
+}
+
+.product_short_info{
+    position: relative;
+}
