@@ -1,0 +1,33 @@
+.contacts{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_info{
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.contacts_wrapper h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts_info{
+    padding: 15px;
+}
+
+.contacts_info a{
+    font-size: 22px;
+    color: black;
+}
+
+.contacts_info h2{
+    font-size: 24px;
+}
+
+.contacts_info h2:not(:last-child){
+    margin-bottom: 15px;
+}

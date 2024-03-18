@@ -10,7 +10,7 @@ import { Product } from '../../../common/models/Product';
 
 
 export const CatalogList = observer(() => {
-    const {loadingData, productsData, awaiting, loadCategories, allCategories } = store
+    const {productsData, awaiting, loadCategories } = store
     const {addToCart} = cartStore
 
 
@@ -18,33 +18,14 @@ export const CatalogList = observer(() => {
         loadCategories()
     },[])
 
-    useEffect(() => {
-        if(allCategories){
-            loadingData()
-        }
-
-    },[allCategories])
-
-    const handleCategoryClick = (selectedCategory: string) => {
-        loadingData(selectedCategory);
-    }
-
     const handleProductCartClick = (product: Product) => {
         addToCart(product);
     }
 
     return <>
-        {allCategories && allCategories.map((category) => 
-                <Button 
-                    key={category}
-                    onClick={()=>{handleCategoryClick(category)}}
-                >
-                    {category}
-                </Button>)
-        }
         <Spin spinning={awaiting}>
                 <div className='products'>
-                    {productsData && productsData.length > 0 && productsData.map((product) => 
+                    {productsData && productsData.map((product) => 
                         <div key={product.id} className='product'>
                             <img className='product__image' src={product.images} />
                             <div className='product_short_info'>

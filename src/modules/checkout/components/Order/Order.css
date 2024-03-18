@@ -1,0 +1,18 @@
+.sum{
+    margin-bottom: 20px;
+}
+
+.placing_order{
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid transparent;
+    background: #008BFF;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.placing_order:hover{
+    background: #00AEFF;
+    border: 1px solid #008BFF;
+}

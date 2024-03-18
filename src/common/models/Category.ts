@@ -2,5 +2,6 @@ export type CategoriesData = Category[]
 
 export type Category = {            
     id: string,
-    name: string
+    name: string,
+    image: string
 }

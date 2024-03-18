@@ -11,6 +11,10 @@ class CartStore {
         }, 0)
     }
 
+    get isCartEmpty () {
+        return this.cartCounts === 0
+    }
+
     get totalPrice() {
         return this.cartState.reduce((acc, productIncart) => {
             return acc + (productIncart.count*productIncart.price)
@@ -32,6 +36,10 @@ class CartStore {
 
     deleteProduct = (productId: number) => {
         this.cartState = this.cartState.filter(({id}) => id !== productId)
+    }
+
+    clear = () => {
+        this.cartState = []
     }
 }
 

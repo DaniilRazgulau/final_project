@@ -2,6 +2,17 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer__wrapper,
+.footer__catalog,
+.footer__title,
+.footer__catalog__items,
+.footer__messagers__info,
+.contact-us__messagers,
+.footer__social{
+    background-color: #FFD750;
 }
 
 .footer__title {
@@ -42,24 +53,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.footer__messagers__info .messager__viber,
-.footer__messagers__info .messager__telegram,
-.footer__messagers__info .messager__whatsapp,
-.footer__social__info .social__instagram,
-.footer__social__info .social__facebook,
-.footer__social__info .social__pinterest {
-    border:solid 1px #d9e4f1;
-}
-
-.footer__messagers__info .messager__viber:hover,
-.footer__messagers__info .messager__telegram:hover,
-.footer__messagers__info .messager__whatsapp:hover,
-.footer__social__info .social__instagram:hover,
-.footer__social__info .social__facebook:hover,
-.footer__social__info .social__pinterest:hover {
-    background-color: #d9e4f1;
 }
 
 @media (max-width: 800px){
@@ -134,10 +127,7 @@
     .footer__contacts__item svg,
     .footer__messagers__info .messager__viber svg,
     .footer__messagers__info .messager__telegram svg,
-    .footer__messagers__info .messager__whatsapp svg,
-    .footer__social__info .social__instagram svg,
-    .footer__social__info .social__facebook svg,
-    .footer__social__info .social__pinterest svg {
+    .footer__messagers__info .messager__whatsapp svg {
         width: 25px;
         height: 25px;
     }

@@ -1,3 +1,7 @@
+import { Promotions } from './components/Promotions'
+
 export const Main = () => {
-    return <h2>Main</h2>
+    return <>
+        <Promotions />
+    </>
 }

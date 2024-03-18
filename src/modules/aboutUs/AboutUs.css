@@ -1,0 +1,26 @@
+.about_us{
+    color: #000;
+}
+
+.about_us h1{
+    font-size: 28px;
+}
+
+.about_us h1:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.about_us h2{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.about_us h2:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.contacts_link{
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
