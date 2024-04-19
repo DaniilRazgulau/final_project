@@ -1,14 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #F0F8FF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html,
 body,
 #root {
     height: 100vh;
+}
+
+body{
+    background-color: #F0F8FF;
 }
 
 #root {

@@ -1,5 +1,6 @@
 .promo__carousel__item {
-    height: 400px;
+    height: 600px;
+    width: auto;
 }
 
 .slick-dots li{
@@ -10,22 +11,27 @@
     align-items: center;
     cursor: pointer;
 }
-
-.promocode__shoes, 
+ 
 .promocode__miscellaneous {
-    background-color: #fad89d;
+    background-image: url("../../../../common/components/images/rabbit.png");
+    background-size: cover;
 }
 
-.promo__posuda, 
-.promo__hranenie {
-    background-color: #728eae;
+.promocode__shoes{
+    background-image: url("../../../../common/components/images/spring.png");
+    background-size: cover;
+}
+
+.promocode__shoes>.promocode__info>.promocode,
+.promocode__shoes>.promocode__info>.promocode_discount{
+    color: #fff;
 }
 
 .promocode__info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 25px;
+    padding: 200px;
     align-items: center;
 }
 
@@ -46,87 +52,4 @@
 .promocode__info span{
     font-size: 22px;
     font-weight: bold;
-}
-
-@media (max-width: 800px){
-    .promo__item__info {
-        position: relative;
-        justify-content: center;
-        width: 300px;
-    }
-
-    .promo__carousel__item {
-        height: 360px;
-    }
-
-    .promocode__info {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.35);
-        width: 80%;
-        border-radius: 10px;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .promocode__shoes>.promocode__info>.promocode,
-    .promocode__miscellaneous>.promocode__info>.promocode{
-        color: #172542;
-    }
-}
-
-@media (max-width: 768px){
-    .promo__carousel__item {
-        height: 350px;
-    }
-
-    .promo__info__title {
-        font-size: 36px;
-    }
-
-    .promo__info {
-        gap: 5px;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 425px){
-    .promocode {
-        font-size: 18px;
-    }
-
-    .promo__carousel__item {
-        height: 191px;
-    }
-
-    .promo__info__call{
-        font-size: 12px;
-    }
-
-    .promo__info__call svg {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 375px){
-    .promocode {
-        font-size: 18px;
-    }
-
-    .promo__carousel__item {
-        height: 169px;
-    }
-
-    .promo__info__call{
-        font-size: 12px;
-    }
-
-    .promo__info__call svg {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 320px){
-    .promo__carousel {
-        display: none;
-    }
 }

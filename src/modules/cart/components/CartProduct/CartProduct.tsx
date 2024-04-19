@@ -1,5 +1,5 @@
 import { ProductInCart } from "../../../../common/models/ProductInCart"
-import { Modal, notification } from "antd"
+import { Modal, notification, Button } from "antd"
 import { ExclamationCircleFilled } from '@ant-design/icons';
 import './CartProduct.css'
 
@@ -28,18 +28,17 @@ export const CartProduct = ({product, deleteProduct}:CartProductProps) => {
             },
             onCancel() {
             },
-          });  
+        });  
     }
-
 
     return <div className="cart__item">
                 <div className="cart__item__img">
-                    <img src={product.images[0]} width={120}/>
+                    <img className="cart__item__img__logo" src={product.images[0]} width={120}/>
                 </div>
                 <div className="cart__item__description">
                     <h3>{product.title}</h3>
                     <p  className="cart__item__sum">Сумма {product.price*product.count}$ за {product.count}/шт. </p>
                 </div>
-                <button className="cart__item__btn" onClick={()=> handleDelete(product.id)}>Удалить</button>
+                <Button className="cart__item__btn" onClick={()=> handleDelete(product.id)}>Удалить</Button>
             </div>
 }

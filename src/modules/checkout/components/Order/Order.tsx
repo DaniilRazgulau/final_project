@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import cartStore from "../../../../common/stores/CartStore"
 import { useNavigate } from "react-router-dom"
 import { observer } from "mobx-react-lite"
-import {Form, Input } from "antd"
+import { Form, Input, Button } from "antd"
 import './Order.css'
 
 
@@ -83,9 +83,9 @@ export const Order = observer(() => {
                     <Input />
                 </Form.Item>          
                 <Form.Item>
-                    <button className="placing_order">
+                    <Button htmlType="submit" className="placing_order">
                         Оформить заказ
-                    </button>
+                    </Button>
                 </Form.Item>
             </Form>
         </div>}

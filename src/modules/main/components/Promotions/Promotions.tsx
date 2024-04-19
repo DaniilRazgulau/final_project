@@ -15,12 +15,12 @@ export const Promotions = () => {
     }
 
     return <div className="promo__carousel">
-                <Carousel autoplay pauseOnHover={true} autoplaySpeed={2500} className="promo__carousel__items">
+                <Carousel autoplay pauseOnHover={false} autoplaySpeed={2000} className="promo__carousel__items">
                     <div className="promo__carousel__item">
                         <div className="promocode__shoes promo__item__info"  onClick={handleShoesClick}>
                             <div className="promocode__info">
                                 <h2 className="promocode">По промокоду Spring</h2>
-                                <span className="promocode_discount">Скидка на всю обувь 5%<RightOutlined /></span>
+                                <span className="promocode_discount">Скидка на весь ассортимент обуви 5%<RightOutlined /></span>
                             </div>
                         </div>
                     </div>

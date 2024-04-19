@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 import { CatalogPageStore } from "./stores/CatalogPageStore";
-import { Image } from 'antd';
+import { Image, Button } from 'antd';
 import { observer } from "mobx-react-lite";
 import "./CatalogPage.css"
 import { DescriptionItem } from "./components/DescriptionItem";
@@ -33,20 +33,19 @@ export const CatalogPage = observer(() => {
 
     return <>
         {productDataState && <div>
-                    <h1>{productDataState.title}</h1>
                     <div className="product_card">
                         <div className="product_description">
                             <div className="product_img_table">
                                 <img className="product__img" src={productDataState.images[0]} />
                                 <div className="product__table">
                                     <div className="product__category">
+                                        <h1>{productDataState.title}</h1>
                                         <DescriptionItem name="Описание" value={productDataState.description}/>
-                                        <DescriptionItem name="Категория товара" value={productDataState.category.name}/>
                                     </div> 
                                     <div className="product_description_price">{productDataState.price} $</div>   
                                     <div className="buttons_block">
-                                        <button className="product_btn_back" onClick={handleGoToMainClick}>Назад</button>
-                                        <button className="product_btn_add" onClick={() => handleProductCartClick(productDataState)}>Добавить в корзину</button>
+                                        <Button className="product_btn_back" onClick={handleGoToMainClick}>Назад</Button>
+                                        <Button className="product_btn_add" onClick={() => handleProductCartClick(productDataState)}>Добавить в корзину</Button>
                                     </div>
                                 </div>
                             </div>        

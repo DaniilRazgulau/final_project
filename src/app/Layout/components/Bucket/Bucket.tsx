@@ -4,12 +4,13 @@ import { ShoppingCartOutlined } from '@ant-design/icons';
 import { useNavigate } from "react-router-dom";
 import cartStore from "../../../../common/stores/CartStore";
 import { observer } from "mobx-react-lite";
+import './Bucket.css'
 
 export const Bucket = observer(() => {
     const navigate = useNavigate()
     const {cartCounts} = cartStore
 
-    const hendleCartClick = () => {
+    const handleCartClick = () => {
         navigate('/cart')
     }
     
@@ -25,7 +26,7 @@ export const Bucket = observer(() => {
                  }}
                 >
                     <ButtonGroup className='header__btns'>
-                        <Button className='header__btn header__btn__cart' type="link" onClick={hendleCartClick}>
+                        <Button className='header__btn header__btn__cart' type="link" onClick={handleCartClick}>
                             <Badge className="btn__cart__badge" count={cartCounts} color='#fad89d'>
                                 <ShoppingCartOutlined />
                                 <span className="btn__cart__span">Корзина</span>

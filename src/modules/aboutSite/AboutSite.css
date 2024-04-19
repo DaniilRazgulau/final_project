@@ -1,0 +1,50 @@
+h1{
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.address{
+    margin: 20px 0;
+}
+
+.phones{
+    margin: 20px 0;
+}
+
+.phone{
+    margin-bottom: 7px;
+}
+
+.e-mail{
+    margin-bottom: 20px;
+}
+
+.ooo{
+    margin-top: 20px;
+}
+
+.requisites{
+    margin-top: 20px;
+}
+
+.edition{
+    margin: 20px 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.restrictions{
+    margin: 20px 0;
+}
+
+.policy{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

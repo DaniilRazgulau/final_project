@@ -1,0 +1,12 @@
+.header__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__cart__span {
+    display: block;
+    margin-left: 8px;
+    line-height: 1.2
+}

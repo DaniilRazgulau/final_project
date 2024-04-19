@@ -10,11 +10,11 @@ export const VerticalMenu = () => {
     
     const showDrawer = () => {
         setOpen(true);
-    };
+    }
 
     const onClose = () => {
         setOpen(false);
-    };
+    }
 
     return  <>
                 <div className='vertical__menu'>
@@ -30,6 +30,7 @@ export const VerticalMenu = () => {
                 >
                     <div  className="drawer__items" onClick={onClose}> 
                         <NavLink className='menu__item' to="/">Главная</NavLink>
+                        <NavLink className='menu__item' to="/aboutSite">О сайте</NavLink>
                         <CategoriesData/>
                     </div>
                 </Drawer>
